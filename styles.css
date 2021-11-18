@@ -5,6 +5,19 @@ html {
   font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
+/* --- COLOR PALETTE --- */
+
+:root {
+  --light-grey: #f8f8f8;
+  --fuchsia: #af0e4e;
+  --product-separator-grey: #cccccc;
+  --border-grey: #bcbcbc;
+  --dark-grey: #555555;
+  --button-blue: #0d5c91;
+  --sale-orange: #e02020;
+  --doorbuster-red: #af0200;
+}
+
 /* ============== NAVBAR ============== */
 
 /* ----- NAVBAR-TOP ----- */
@@ -60,6 +73,7 @@ html {
 .search-bar input {
   width: 360px;
   border: 1px solid black;
+  border-radius: 4px 0px 0px 4px;
 }
 .search-bar input::placeholder {
   font-size: 14px;
@@ -72,7 +86,36 @@ html {
   text-decoration: none;
   background-color: black;
   border: none;
+  border-radius: 0px 4px 4px 0px;
 }
 .search-bar button img {
   margin: 0px -2px;
+}
+
+/* ----- SUBNAV ----- */
+
+.subnav {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  background-color: var(--light-grey);
+}
+
+.subnav-items {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.subnav-item a {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+
+.subnav-item:last-of-type {
+  color: var(--sale-orange);
 }

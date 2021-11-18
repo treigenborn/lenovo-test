@@ -1,0 +1,78 @@
+/* --- FONT --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+html {
+  font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+/* ============== NAVBAR ============== */
+
+/* ----- NAVBAR-TOP ----- */
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-top-icons {
+  display: flex;
+  list-style: none;
+  width: 256px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.navbar-top-icon a img {
+  height: 16px;
+  width: 16px;
+}
+
+/* ----- NAVBAR-BOTTOM ----- */
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+
+.navbar-bottom-categories {
+  display: flex;
+  justify-content: space-evenly;
+  width: 760px;
+  margin-top: 5px;
+}
+
+.categories-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  margin-right: 15px;
+  width: 400px;
+  height: 35px;
+}
+
+.search-bar input {
+  width: 360px;
+  border: 1px solid black;
+}
+.search-bar input::placeholder {
+  font-size: 14px;
+  color: black;
+  padding: 18px;
+}
+
+.search-bar button {
+  width: 40px;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+}
+.search-bar button img {
+  margin: 0px -2px;
+}

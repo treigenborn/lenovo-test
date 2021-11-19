@@ -17,21 +17,25 @@
   <body>
     <nav class="navbar">
       <header class="navbar-top">
-        <img src="./assets/lenovo-logo.svg" alt="lenovo logo" />
+        <img
+          src="./assets/lenovo-logo.svg"
+          alt="lenovo logo"
+          class="lenovo-logo"
+        />
         <ul class="navbar-top-icons">
-          <li class="navbar-top-icon">
+          <li class="navbar-top-icon desktop">
             <a href=""
               ><img src="./assets/icons/compare.svg" alt="compare icon"
             /></a>
           </li>
-          <li class="navbar-top-icon">
+          <li class="navbar-top-icon desktop">
             <a href=""
               ><img
                 src="./assets/icons/icon-wishlist-empty.svg"
                 alt="wishlist icon"
             /></a>
           </li>
-          <li class="navbar-top-icon">
+          <li class="navbar-top-icon desktop">
             <a href=""
               ><img
                 src="./assets/icons/icon-store-locator.svg"
@@ -80,6 +84,9 @@
           </li>
           <li class="navbar-bottom-categories-item"><a href="">SUPPORT</a></li>
         </ul>
+        <div class="hamburger-menu">
+          <img src="./assets/icons/hamburger-menu.png" alt="open menu" />
+        </div>
         <div class="search-bar">
           <input type="text" placeholder="What are you looking for today?" />
           <button>
@@ -127,6 +134,10 @@
         </ul>
       </div>
       <section class="main-content-wrapper">
+        <div class="filter-by">
+          <img src="./assets/icons/filter-icon.svg" alt="filter by icon" />
+          <p class="filter-by-text">Filter by specs</p>
+        </div>
         <h2>Models</h2>
         <div class="main-content">
           <aside class="aside-options">
@@ -162,6 +173,7 @@
             </div>
             <div class="products-bottom">
               <article class="product-card">
+                <span class="doorbuster">DOORBUSTER</span>
                 <img src="./assets/notebooks/laptop-1-big.png" alt="laptop 1" />
                 <h5 class="product-title">ThinkPad X1 Carbon Gen 8</h5>
                 <h3 class="product-price">$1299.99</h3>
@@ -180,6 +192,7 @@
                 <button class="buy-button">Add to Cart</button>
               </article>
               <article class="product-card">
+                <span class="doorbuster">DOORBUSTER</span>
                 <img src="./assets/notebooks/laptop-1-big.png" alt="laptop 1" />
                 <h5 class="product-title">ThinkPad X1 Carbon Gen 8</h5>
                 <h3 class="product-price">$1299.99</h3>

@@ -1,6 +1,3 @@
-/* --- FONT --- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-
 html {
   font-family: 'Lato', 'Courier New', Courier, monospace;
 }
@@ -56,10 +53,10 @@ html {
   margin-top: 5px;
 }
 
-.categories-item a {
+.navbar-bottom-categories-item a {
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
@@ -76,7 +73,7 @@ html {
   border-radius: 4px 0px 0px 4px;
 }
 .search-bar input::placeholder {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: black;
   padding: 18px;
 }
@@ -116,6 +113,223 @@ html {
   color: black;
 }
 
-.subnav-item:last-of-type {
+.subnav-item:last-of-type a {
   color: var(--sale-orange);
+}
+
+/* ============== MAIN ============== */
+
+/* ----- BANNER ----- */
+
+.sale-banner {
+  display: flex;
+  height: 50px;
+  background-color: var(--fuchsia);
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-banner h2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.strong {
+  font-weight: 900;
+}
+
+.sale-banner a {
+  color: white;
+  font-size: 1rem;
+  margin-left: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+/* ----- MAIN CATEGORIES ----- */
+
+.main-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid black;
+}
+
+.main-categories-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-categories-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+}
+
+/* ----- MAIN CONTENT ----- */
+
+.main-content-wrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 45px;
+}
+.main-content-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--product-separator-grey);
+}
+
+/* ----- ASIDE ----- */
+
+.aside-options {
+  width: 250px;
+  border-bottom: 1px solid var(--border-grey);
+  margin-top: 20.5px;
+  height: 193px;
+}
+.aside-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-top p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: black;
+}
+
+.aside-bottom {
+  margin: 21px auto;
+}
+
+.aside-bottom-items {
+  margin: 21px 0;
+  display: flex;
+  align-items: center;
+}
+
+.aside-bottom-items a {
+  text-decoration: none;
+  font-size: 00.875rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  margin-left: 9px;
+}
+
+.aside-square {
+  background-color: black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.see-more {
+  font-size: 00.875rem;
+  font-weight: 400;
+  color: var(--button-blue);
+  margin-bottom: 22px;
+}
+
+/* ----- PRODUCTS SECTION ----- */
+
+.products-wrapper {
+  width: 979px;
+  margin-left: 16px;
+}
+.main-content {
+  display: flex;
+}
+
+.products-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 21.5px 21.5px 0 30px;
+}
+
+.select-filter {
+  width: 218px;
+  height: 45px;
+  appearance: none;
+  background-image: url(./assets/icons/icon-arrow-down.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  font-size: 1rem;
+  color: var(--dark-grey);
+  padding: 10px;
+}
+
+.select-filter:focus {
+  background-image: url(./assets/icons/icon-arrow-up.svg);
+}
+
+/* ----- PRODUCTS CARDS ----- */
+
+.products-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 395px;
+  width: 232px;
+  border: 1px solid var(--border-grey);
+  margin: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.product-card img {
+  margin-top: 60px;
+  width: 75%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 1rem;
+  color: var(--button-blue);
+  font-weight: 400;
+  position: absolute;
+  bottom: 181px;
+}
+
+.product-price {
+  width: 100%;
+  margin-left: 24px;
+  font-size: 1.625rem;
+  position: absolute;
+  bottom: 108px;
+  text-align: left;
+}
+
+.coupon {
+  width: 100%;
+  margin-left: 24px;
+  text-align: left;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 81px;
+}
+
+.buy-button {
+  width: 202px;
+  height: 45px;
+  text-decoration: none;
+  background-color: var(--button-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 24px;
 }

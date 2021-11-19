@@ -359,6 +359,189 @@ html {
 
 /* ========== MEDIA QUERIES ========== */
 
+@media screen and (max-width: 1024px) and (min-width: 750px) {
+  /* ===== NAVBAR ===== */
+
+  /* ----- NAVBAR TOP ----- */
+
+  .navbar-top-icons {
+    width: 50%;
+  }
+
+  .lenovo-logo {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* ----- NAVBAR BOTTOM ----- */
+
+  .navbar-bottom {
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .navbar-bottom-categories {
+    display: none;
+    z-index: 1;
+    width: 92%;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    padding: 16px;
+  }
+
+  .navbar-bottom-categories-item {
+    padding: 20px 0;
+    border-top: 1px solid var(--border-grey);
+  }
+
+  .navbar-bottom-categories-item a {
+    font-size: 1rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+
+  .search-bar {
+    margin: 12px 12px 0 0;
+  }
+
+  .subnav {
+    display: none;
+  }
+
+  /* -----  SALE BANNER ----- */
+
+  .sale-banner {
+    margin-top: 20px;
+  }
+  .sale-banner h2 {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  /* ========== MAIN CONTENT ========== */
+
+  /* -----  CATEGORIES ----- */
+
+  .main-categories-wrapper {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .main-categories-item {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 20px;
+  }
+
+  .main-categories-item a {
+    font-size: 1rem;
+  }
+
+  .main-content-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .main-content-wrapper h2 {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: auto;
+  }
+
+  .filter-by {
+    border: 2px solid var(--button-blue);
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .filter-by-text {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--button-blue);
+    padding: 5px;
+  }
+  .filter-by img {
+    width: 40px;
+    height: auto;
+  }
+
+  .aside-options {
+    display: none;
+  }
+
+  /* ----- PRODUCTS TOP ----- */
+
+  .products-wrapper {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .products-top {
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+    align-content: center;
+  }
+
+  .products-top p {
+    padding: 14px;
+  }
+
+  .select-filter {
+    width: 50%;
+    text-align: left;
+  }
+
+  /* ----- PRODUCT BOTTOM ----- */
+
+  .products-bottom {
+    max-width: 98%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  /* ----- PRODUCT CARD ----- */
+
+  .product-card {
+    width: 45%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .product-card img {
+    width: 85%;
+    max-width: 210px;
+  }
+  .product-title {
+    bottom: 160px;
+    left: 12px;
+  }
+  .product-price {
+    bottom: 115px;
+  }
+  .coupon {
+    width: 90%;
+    margin-left: 5px;
+  }
+  .buy-button {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 750px) {
   /* ===== NAVBAR ===== */
 

@@ -1,3 +1,5 @@
+//extra filters in the aside section from the desktop view
+
 const seeMore = document.querySelector('.see-more');
 
 seeMore.addEventListener('click', (e) => {
@@ -16,6 +18,8 @@ seeMore.addEventListener('click', (e) => {
   }
 });
 
+// open and close navbar from mobile and tablet view
+
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 hamburgerMenu.addEventListener('click', (e) => {
@@ -30,6 +34,8 @@ hamburgerMenu.addEventListener('click', (e) => {
     hamburgerMenu.children[0].src = './assets/icons/hamburger-menu.png';
   }
 });
+
+// open and close filters from navbar and tablet view
 
 const filterBy = document.querySelector('.filter-by');
 

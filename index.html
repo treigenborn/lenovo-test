@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+    rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Lenovo Landing Page</title>
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
+      <!-- TOP NAVBAR -->
       <header class="navbar-top">
         <img
           src="./assets/lenovo-logo.svg"
@@ -68,6 +70,7 @@
           </li>
         </ul>
       </header>
+      <!-- BOTTOM NAVBAR -->
       <div class="navbar-bottom">
         <ul class="navbar-bottom-categories">
           <li class="navbar-bottom-categories-item">
@@ -84,9 +87,11 @@
           </li>
           <li class="navbar-bottom-categories-item"><a href="">SUPPORT</a></li>
         </ul>
+        <!-- HAMBURGER MENU FOR TABLET AND MOBILE VIEW -->
         <div class="hamburger-menu">
           <img src="./assets/icons/hamburger-menu.png" alt="open menu" />
         </div>
+        <!-- SEARCH BAR -->
         <div class="search-bar">
           <input type="text" placeholder="What are you looking for today?" />
           <button>
@@ -94,6 +99,7 @@
           </button>
         </div>
       </div>
+      <!-- SUBNAV -->
       <div class="subnav">
         <ul class="subnav-items">
           <li class="subnav-item"><a href=""> Laptops </a></li>
@@ -112,6 +118,7 @@
       </div>
     </nav>
     <main>
+      <!-- SALE BANNER -->
       <div class="sale-banner">
         <h2>
           SAVE UP TO 21% ON
@@ -119,6 +126,8 @@
           NOVEMBER 11TH <a href="">Shop Now </a> >
         </h2>
       </div>
+
+      <!-- MAIN CATEGORIES -->
       <div class="main-categories">
         <ul class="main-categories-wrapper">
           <li class="main-categories-item"><a href="">Models</a></li>
@@ -133,11 +142,13 @@
           </li>
         </ul>
       </div>
+      <!-- MAIN CONTENT -->
       <section class="main-content-wrapper">
         <div class="filter-by">
           <img src="./assets/icons/filter-icon.svg" alt="filter by icon" />
           <p class="filter-by-text">Filter by specs</p>
         </div>
+        <!-- MOBILE AND TABLET VIEW FILTERS -->
         <div class="filters">
           <img src="./assets/icons/close-menu.png" alt="close filters tab" id="close-filters">
           <h1>Filters</h1>
@@ -192,6 +203,7 @@
         </div>
         <h2>Models</h2>
         <div class="main-content">
+          <!-- ASIDE FILTERS DESKTOP VIEW -->
           <aside class="aside-options">
             <div class="aside-top">
               <p>Price</p>
@@ -211,7 +223,7 @@
                 <a href="">$1500-$1999.99 (3)</a>
               </li>
             </ul>
-            <div class="extra-filters">
+            <div id="extra-filters">
               <p>Screen size</p>
               <ul class="aside-bottom">
                 <li class="aside-bottom-items">
@@ -245,6 +257,7 @@
             </div>
             <p class="see-more">See More</p>
           </aside>
+          <!-- PRODUCTS SECTION -->
           <section class="products-wrapper">
             <div class="products-top">
               <p>8 Matching Results</p>
